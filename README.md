@@ -21,17 +21,10 @@ Then clone this project and run
 ```
 bundle install
 ```
-You need to put an `.env` file into your root directory with your `SECRET_KEY` from IFTTT.
+You need to provide your `IFTTT_KEY` as an ENV variable to use your own web hook and run the command like so. Get your key [here](https://ifttt.com/maker_webhooks)
 
 ```
-# .env
-
-SECRET_KEY=xxxxx
-```
-
-Then use it by
-```
-ruby fetch_coins_data.rb
+IFTTT_KEY="xxxxx" ruby fetch_coins_data.rb
 ```
 
 Feel free to post any issue or submit a PR. Thanks!
