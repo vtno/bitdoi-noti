@@ -13,11 +13,11 @@ xrp = data['25']
 omg = data['26']
 
 value1 = <<-TEXT
-  From https://bx.in.th/
-  BTC: ฿#{btc['last_price']}
+  OMG: ฿#{omg['last_price']}
   ETH: ฿#{eth['last_price']}
   XRP: ฿#{xrp['last_price']}
-  OMG: ฿#{omg['last_price']}
+  BTC: ฿#{btc['last_price']}
+  From https://bx.in.th/
 TEXT
 
 target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_NOTI/with/key/#{IFTTT_KEY}")

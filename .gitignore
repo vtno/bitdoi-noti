@@ -1,3 +1,4 @@
 # Ignore application configuration
 /config/application.yml
 .env
+iterate_fetch.rb
