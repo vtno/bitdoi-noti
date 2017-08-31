@@ -3,6 +3,7 @@
 require 'whenever'
 require 'net/http'
 require 'json'
+require 'dotenv/load'
 
 def fetch_coins_data
   uri = URI('https://bx.in.th/api/')
@@ -24,8 +25,9 @@ def fetch_coins_data
   req_objs = {
     value1: value1
   }
-
-  target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_SHIT/with/key/#{ENV['SECRET_KEY']}")
+  target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_SHIT/with/key/#{ENV["SECRET_KEY"]}")
   req = Net::HTTP.post_form(target_uri, req_objs)
   puts req.body
 end
+
+fetch_coins_data

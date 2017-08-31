@@ -21,21 +21,19 @@ Then clone this project and run
 ```
 bundle install
 ```
-You need to put an `application.yml` file into your config file with your `SECRET_KEY` from IFTTT.
+You need to put an `.env` file into your root directory with your `SECRET_KEY` from IFTTT.
 
 ```
-# application.yml
+# .env
 
-SECRET_KEY: "xxxxx"
+SECRET_KEY=xxxxx
+```
 
-# Or just put it in the code like so
-# fetch_coins_data.rb
-...
-...
-target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_SHIT/with/key/[xxxxxx])
-...
+Then use it by
+```
+ruby fetch_coins_data.rb
 ```
 
 Feel free to post any issue or submit a PR. Thanks!
 
-## Enjoy the **DOI**.
+## Enjoy the **DOI**

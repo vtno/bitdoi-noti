@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
 gem 'whenever'
-gem 'figaro'
+gem 'dotenv'
