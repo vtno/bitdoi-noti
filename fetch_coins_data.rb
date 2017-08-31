@@ -3,6 +3,8 @@
 require 'net/http'
 require 'json'
 
+IFTTT_KEY = ENV['IFTTT_KEY']
+
 res = Net::HTTP.get_response URI('https://bx.in.th/api/')
 data = JSON.parse res.body
 btc = data['1']
@@ -18,6 +20,6 @@ value1 = <<-TEXT
   OMG: ฿#{omg['last_price']}
 TEXT
 
-target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_SHIT/with/key/#{ENV['IFTTT_KEY']}")
+target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_SHIT/with/key/#{IFTTT_KEY}")
 req = Net::HTTP.post_form(target_uri, value1: value1)
 puts req.body
