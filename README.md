@@ -24,7 +24,7 @@ bundle install
 You need to provide your `IFTTT_KEY` as an ENV variable to use your own web hook and run the command like so. Get your key [here](https://ifttt.com/maker_webhooks)
 
 ```
-IFTTT_KEY="xxxxx" ruby fetch_coins_data.rb
+IFTTT_KEY=xxxxx ruby fetch_coins_data.rb
 ```
 
 Feel free to post any issue or submit a PR. Thanks!

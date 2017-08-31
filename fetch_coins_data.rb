@@ -20,6 +20,6 @@ value1 = <<-TEXT
   OMG: ฿#{omg['last_price']}
 TEXT
 
-target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_SHIT/with/key/#{IFTTT_KEY}")
+target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_NOTI/with/key/#{IFTTT_KEY}")
 req = Net::HTTP.post_form(target_uri, value1: value1)
 puts req.body
