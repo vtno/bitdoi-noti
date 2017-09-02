@@ -1,6 +1,6 @@
 # Bitdoi - บิทดอย
 
-Get latest prices and send a notification  to your [LINE](https://line.me/th/) account/group by [IFTTT webhook service](https://ifttt.com/maker_webhooks).
+Get latest prices and send a notification from [BX.in.th](https://www.bx.in.th) and [Bitfinex](https://bitfinex.com) to your [LINE](https://line.me/th/) account/group by [IFTTT webhook service](https://ifttt.com/maker_webhooks).
 
 You can deploy this to any web service with CRON job to get routine notifications.
 
