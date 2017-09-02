@@ -12,6 +12,8 @@ eth = data['21']
 xrp = data['25']
 omg = data['26']
 
+puts data
+
 value1 = <<-TEXT
   OMG: ฿#{omg['last_price']}
   ETH: ฿#{eth['last_price']}
