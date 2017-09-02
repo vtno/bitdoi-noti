@@ -15,11 +15,8 @@ omg = data['26']
 puts data
 
 value1 = <<-TEXT
-  OMG: ฿#{omg['last_price']}
-  ETH: ฿#{eth['last_price']}
-  XRP: ฿#{xrp['last_price']}
-  BTC: ฿#{btc['last_price']}
-  From https://bx.in.th/
+  OMG: ฿#{omg['last_price']} ETH: ฿#{eth['last_price']} XRP: ฿#{xrp['last_price']} BTC: ฿#{btc['last_price']}
+  From bx
 TEXT
 
 target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_NOTI/with/key/#{IFTTT_KEY}")
