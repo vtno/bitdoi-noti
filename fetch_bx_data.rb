@@ -17,9 +17,6 @@ value1 = <<-TEXT
   From bx
 TEXT
 
-target_uri = URI("https://maker.ifttt.com/trigger/CRYPTO_NOTI/with/key/#{IFTTT_KEY}")
-target_uri2 = URI("https://maker.ifttt.com/trigger/CRYPTO_NOTI_OOZOU/with/key/#{IFTTT_KEY}")
+target_uri = URI("https://maker.ifttt.com/trigger/crypto_noti/with/key/#{IFTTT_KEY}")
 req = Net::HTTP.post_form(target_uri, value1: value1)
-req2 = Net::HTTP.post_form(target_uri2, value1: value1)
 puts req.body
-puts req2.body
